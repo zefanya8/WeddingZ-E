@@ -1,0 +1,39 @@
+body {
+    font-family: 'Great Vibes', cursive;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cover {
+    text-align: center;
+    padding: 50px;
+    background: #fff5e6;
+}
+
+.nama-tamu {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.ucapan-item {
+    background: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff4d4d;
+}
