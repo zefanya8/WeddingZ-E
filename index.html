@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Undangan Pernikahan Zefanya & Esrani</title>
+    <link rel="stylesheet" href="style.css"> <!-- Jika ada CSS -->
+    <script src="firebase.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Bagian Cover -->
+    <div class="cover">
+        <img src="FotoHal1.jpg">
+        <div class="nama-tamu" id="namaTamu">
+            Tanpa Mengurangi Rasa Hormat, Kami Mengundang 
+            <span id="dynamicNama">Bapak/Ibu/Saudara/i</span> 
+            untuk hadir di acara Pernikahan Kami
+        </div>
+        <button onclick="playAudio()">Buka Undangan</button>
+    </div>
+
+    <!-- Bagian Mempelai -->
+    <div class="mempelai">
+        <img src="FotoHal2.jpg">
+        <div class="detail">
+            <div class="profil">
+                <img src="fama-pria.jpg">
+                <h3>Zefanya Maranatha Mangunsong, S. Tr. T</h3>
+                <p>Putra pertama dari Bapak R Simangunsong dan Ibu R Sigalingging</p>
+            </div>
+            <div class="profil">
+                <img src="fama-wanita.jpg">
+                <h3>Esrani Novalina Sagala, S. Pd.</h3>
+                <p>Putri pertama dari Bapak T Sagala dan Ibu D Harianja</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bagian Waktu & Lokasi -->
+    <div class="acara">
+        <h2>15 Maret 2025</h2>
+        <div class="lokasi">
+            <iframe src="https://www.google.com/maps/embed/..." width="100%" height="200"></iframe>
+        </div>
+    </div>
+
+    <!-- Bagian Rekening -->
+    <div class="rekening">
+        <div class="bank">
+            <img src="logo-mandiri.jpg">
+            <p>9000040483969<br>a.n Zefanya Maranatha Mangunsong</p>
+            <button onclick="copyText('9000040483969')">Copy No. Rek</button>
+        </div>
+        <div class="bank">
+            <img src="logo-cimb.jpg">
+            <p>707039180200<br>a.n Esrani Novalina Sagala</p>
+            <button onclick="copyText('707039180200')">Copy No. Rek</button>
+        </div>
+    </div>
+
+    <!-- Bagian Ucapan -->
+    <div class="ucapan-section">
+        <h2>Tulis Ucapan</h2>
+        <form id="formUcapan">
+            <input type="text" id="nama" placeholder="Nama Anda" required>
+            <textarea id="pesan" placeholder="Ucapan & Doa" required></textarea>
+            <select id="kehadiran" required>
+                <option value="">Konfirmasi Kehadiran</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+                <option value="Ragu-ragu">Ragu-ragu</option>
+            </select>
+            <button type="submit">Kirim</button>
+        </form>
+        <div id="daftarUcapan"></div>
+    </div>
+</body>
+</html>
